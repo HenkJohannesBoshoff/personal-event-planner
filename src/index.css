@@ -1,0 +1,148 @@
+/* === Navbar active link styles === */
+.nav-link.active {
+  font-weight: bold;
+  background-color: rgba(43, 186, 0, 0.732);
+  border-radius: 4px;
+  transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* === Global Styles === */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container padding for all pages */
+.container {
+  max-width: 1200px;
+  padding: 15px;
+}
+
+/* === Card Styles === */
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+}
+
+/* === Button Styles === */
+.btn {
+  padding: 5px 12px;
+}
+
+/* Green primary button */
+.btn-primary {
+  background-color: #198754 !important;
+  border-color: #000000;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1aab67 !important;
+  border-color: #000000;
+  border-width: 0.4vh;
+  color: white;
+}
+
+/* Yellow warning button */
+.btn-warning {
+  background-color: #f2ff00;
+  border-color: #000000;
+  color: black;
+}
+
+.btn-warning:hover {
+  background-color: #f0f005;
+  border-color: #000000;
+  border-width: 0.4vh;
+  color: black;
+}
+
+/* Red danger button */
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #000000;
+}
+
+.btn-danger:hover {
+  background-color: #da3646;
+  border-color: #000000;
+  border-width: 0.4vh;
+}
+
+/* Teal secondary/cancel button */
+.btn-secondary {
+  background-color: teal;
+  border-color: #000000;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #008080;
+  border-color: #000000;
+  border-width: 0.4vh;
+}
+
+/* === Form Styles === */
+form {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form .form-control {
+  margin-bottom: 10px;
+}
+
+/* === Modal Styling === */
+.modal-content {
+  border-radius: 8px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+/* === Utility spacing === */
+.page-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 15px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .nav-link {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
