@@ -26,7 +26,7 @@ export default function AddEvent() {
           if (!values.date) errors.date = "Date is required.";
           else if (isNaN(new Date(values.date).getTime()))
             errors.date = "Invalid date format.";
-          if (!values.time) errors.time = "Time is required."; // ✅ Added validation
+          if (!values.time) errors.time = "Time is required."; // Added validation
           if (!values.location.trim())
             errors.location = "Location is required.";
           if (!values.description.trim())

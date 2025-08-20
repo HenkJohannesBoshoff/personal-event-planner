@@ -23,7 +23,7 @@ export default function EditEvent() {
         initialValues={{
           title: eventToEdit.title || "",
           date: eventToEdit.date || "",
-          time: eventToEdit.time || "", // ✅ Added time
+          time: eventToEdit.time || "", // Added time
           location: eventToEdit.location || "",
           description: eventToEdit.description || "",
         }}
@@ -33,7 +33,7 @@ export default function EditEvent() {
           if (!values.date) errors.date = "Date is required.";
           else if (isNaN(new Date(values.date).getTime()))
             errors.date = "Invalid date format.";
-          if (!values.time) errors.time = "Time is required."; // ✅ Validate time
+          if (!values.time) errors.time = "Time is required."; // Validate time
           if (!values.location.trim())
             errors.location = "Location is required.";
           if (!values.description.trim())
